@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="main.css">
     <title>Document</title>
 </head>
 <body>
     <h1>Ola bootstrap</h1>
+    <!-- Esquema de linhas e colunas -->
     <!-- <div class="container">
         <div class="row">
             <div class="col">
@@ -32,9 +34,13 @@
                 <h3>Produto</h3>
             </div>
         </div>
-    </div>
+     </div>: -->
+
+    <!-- Tipografia -->
     <h1 class="display-1">Teste de tipografia</h1>
     <p class="h1"><mark>Teste de marca testo</mark>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique et ea a quisquam, ab saepe adipisci asperiores unde expedita non mollitia corporis alias, velit officiis, quod ipsum dignissimos? Minima, eligendi.</p>
+    
+    <!-- Tabelas -->
     <style>
         table{
             max-width: 500px;
@@ -76,7 +82,8 @@
                 </tr>
             </tbody>
         </thead>
-    </table> -->
+    </table> 
+    <!-- Accordion -->
     <div class="accordion">
         <div class="accordion-item">
             <div class="accordion-header">
@@ -106,6 +113,85 @@
     <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#preco">Ver preço </button> 
     <div class="collapse collapse-horizontal" id="preco">     
 	    <p>A partir de R$ 1.000,00 </p> 
+    </div>
+    <!-- Alertas -->
+     <div class="alert alert-primary alert-dismissible">
+        <button class="btn-close" data-bs-dismiss="alert"></button>
+        Sou uma mensagem de alerta
+     </div>
+
+
+    <!-- Formulario -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="alert alert-success">
+                    Confira as novidades do Blog <a href="#">Clique aqui</a>
+                </div> 
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <h2>Última postagem</h2>
+                <div class="container g-0">
+                    <div class="row">
+                        <div class="col-md-4 post">
+                            <img src="https://via.placeholder.com/180x180" alt="">
+                            <h4 class="h5">Titulo da mensagem</h4>
+                            <time datetime="">24/10/2024</time>
+                            <a class="btn btn-primary btn-sm">Leia Mais</a>
+                        </div>
+                        <div class="col-md-4 post">
+                            <img src="https://via.placeholder.com/180x180" alt="">
+                            <h4 class="h5">Titulo da mensagem</h4>
+                            <time datetime="">24/10/2024</time>
+                            <a class="btn btn-primary btn-sm">Leia Mais</a>
+                        </div>
+                        <div class="col-md-4 post">
+                            <img src="https://via.placeholder.com/180x180" alt="">
+                            <h4 class="h5">Titulo da mensagem</h4>
+                            <time datetime="">24/10/2024</time>
+                            <a class="btn btn-primary btn-sm">Leia Mais</a>
+                        </div>
+                        <div class="col-md-4 post">
+                            <img src="https://via.placeholder.com/180x180" alt="">
+                            <h4 class="h5">Titulo da mensagem</h4>
+                            <time datetime="">24/10/2024</time>
+                            <a class="btn btn-primary btn-sm">Leia Mais</a>
+                        </div>
+                        <div class="col-md-4 post">
+                            <img src="https://via.placeholder.com/180x180" alt="">
+                            <h4 class="h5">Titulo da mensagem</h4>
+                            <time datetime="">24/10/2024</time>
+                            <a class="btn btn-primary btn-sm">Leia Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex justify-content-end">
+                <div>
+                    <h2>Anunciantes</h2>
+                    <img src="https://via.placeholder.com/180x180" alt="Imagem">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2>Entre em contato</h2>
+                <form action="">
+                    <label class="form-label" for="name">Seu nome:</label>
+                    <input class="form-control" type="text" id="name">
+                    <label for="email" class="form-label">Seu e-mail:</label>
+                    <input type="email" class="form-control">
+                    <label for="mensagem" class="form-control">Sua mensagem:</label>
+                    <textarea name="" id="mensagem" class="form-control"></textarea>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="aceito-termos">
+                        <label class="form-check-label" for="aceito-termos">Li e concordo com os termos do site</label>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 </html>
